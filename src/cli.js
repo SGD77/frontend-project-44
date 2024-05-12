@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-const prompt = () => {
+export const prompt = () => {
     const name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
 };
-export default prompt;
