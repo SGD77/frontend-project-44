@@ -1,7 +1,7 @@
-import random from "../src/randomInt.js";
+import random from "./randomInt.js";
 import readlineSync from "readline-sync";
 
-const askQuestion = () => {
+const playEven = () => {
   const questionNumber = random(1, 15);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   console.log(`Question: ${questionNumber}`);
@@ -14,4 +14,4 @@ const askQuestion = () => {
   }
   return [userAnswer, correctAnswer];
 };
-export default askQuestion;
+export default playEven;
