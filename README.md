@@ -3,3 +3,6 @@
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/SGD77/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SGD77/frontend-project-44/actions)
+
+Step 5 asci
+https://asciinema.org/a/s9pN7LViEAJ14VEJO7JfdNTjr
