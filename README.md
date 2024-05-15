@@ -4,5 +4,8 @@
 
 [![Actions Status](https://github.com/SGD77/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SGD77/frontend-project-44/actions)
 
-Step 5 asci
+Step 5 (even) asci
 https://asciinema.org/a/s9pN7LViEAJ14VEJO7JfdNTjr
+
+Step 6 (calc) asci
+https://asciinema.org/a/acrmCwTgvhCd7JRvaGTwsPkJV
