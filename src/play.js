@@ -1,7 +1,7 @@
-const play = (playEven, name, rounds) => {
+const play = (game, name, rounds) => {
   let i = 0;
   while (i < rounds) {
-    const [userAnswer, correctAnswer] = playEven();
+    const [userAnswer, correctAnswer] = game();
     if (userAnswer === correctAnswer) {
       i += 1;
       console.log("Correct!");

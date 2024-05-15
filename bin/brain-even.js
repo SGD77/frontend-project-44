@@ -1,4 +1,4 @@
-import playEven from "../src/playEven.js";
+import playEven from "../src/games/playEven.js";
 import play from "../src/play.js";
 import askName from "../src/askName.js";
 
