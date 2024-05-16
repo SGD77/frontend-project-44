@@ -9,3 +9,6 @@ https://asciinema.org/a/s9pN7LViEAJ14VEJO7JfdNTjr
 
 Step 6 (calc) asci
 https://asciinema.org/a/acrmCwTgvhCd7JRvaGTwsPkJV
+
+Step 7 (gcd) asci
+https://asciinema.org/a/BS9FVFlY15ZDAPYqhEzhQoC7l
