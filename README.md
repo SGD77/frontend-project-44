@@ -15,3 +15,6 @@ https://asciinema.org/a/BS9FVFlY15ZDAPYqhEzhQoC7l
 
 Step 8 (progression) asci
 https://asciinema.org/a/LGpwnLb4KJhHNoqRnNVKqsxSH
+
+Step 9 (prime) asci
+https://asciinema.org/a/efHYwIp2VhIqNd1S6fHiDbRNE
