@@ -4,10 +4,10 @@ const play = (game, name, rounds) => {
     const [userAnswer, correctAnswer] = game();
     if (userAnswer === correctAnswer) {
       i += 1;
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`,
       );
       return;
     }

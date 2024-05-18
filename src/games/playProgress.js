@@ -1,5 +1,5 @@
-import random from "../randomInt.js";
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
+import random from '../randomInt.js';
 
 const playProgress = () => {
   const row = [];
@@ -12,11 +12,11 @@ const playProgress = () => {
     numStart += step;
     row.push(numStart);
   }
-  let correctAnswer = row[indexToGuess];
-  row[indexToGuess] = "..";
-  console.log("What number is missing in the progression?");
-  console.log(`Question: ${row.join(" ")}`);
-  const userAnswer = Number(readlineSync.question("Your answer: "));
+  const correctAnswer = row[indexToGuess];
+  row[indexToGuess] = '..';
+  console.log('What number is missing in the progression?');
+  console.log(`Question: ${row.join(' ')}`);
+  const userAnswer = Number(readlineSync.question('Your answer: '));
   return [userAnswer, correctAnswer];
 };
 export default playProgress;

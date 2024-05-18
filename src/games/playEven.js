@@ -1,16 +1,16 @@
-import random from "../randomInt.js";
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
+import random from '../randomInt.js';
 
 const playEven = () => {
   const questionExpression = random(1, 15);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   console.log(`Question: ${questionExpression}`);
-  const userAnswer = readlineSync.question("Your answer: ");
-  let correctAnswer = "";
+  const userAnswer = readlineSync.question('Your answer: ');
+  let correctAnswer = '';
   if (questionExpression % 2 === 0) {
-    correctAnswer = "yes";
+    correctAnswer = 'yes';
   } else {
-    correctAnswer = "no";
+    correctAnswer = 'no';
   }
   return [userAnswer, correctAnswer];
 };
