@@ -6,8 +6,9 @@ const play = (game, name, rounds) => {
       i += 1;
       console.log("Correct!");
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\n
-      Let's try again, ${name}`);
+      console.log(
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}`
+      );
       return;
     }
     console.log(`Congratulations, ${name}!`);
