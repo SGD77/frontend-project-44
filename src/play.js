@@ -7,9 +7,10 @@ const play = (game, name, rounds) => {
       console.log("Correct!");
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\n
-Let's try again, ${name}`);
+      Let's try again, ${name}`);
       return;
     }
+    console.log(`Congratulations, ${name}!`);
   }
 };
 export default play;
