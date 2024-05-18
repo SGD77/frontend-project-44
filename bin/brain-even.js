@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import playEven from "../src/games/playEven.js";
 import play from "../src/play.js";
-import greeting from "./brain-games.js";
+import { name } from "./brain-games.js";
 
-const name = greeting();
 play(playEven, name, 3);
+

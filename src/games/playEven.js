@@ -1,5 +1,6 @@
 import random from "../randomInt.js";
 import readlineSync from "readline-sync";
+console.log('========playEven start')
 
 const playEven = () => {
   const questionExpression = random(1, 15);
@@ -14,4 +15,5 @@ const playEven = () => {
   }
   return [userAnswer, correctAnswer];
 };
+console.log('========playEven end')
 export default playEven;

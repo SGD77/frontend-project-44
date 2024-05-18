@@ -3,15 +3,9 @@ import readlineSync from "readline-sync";
 
 const playCalc = () => {
   // math functions
-  const add = (a, b) => {
-    return a + b;
-  };
-  const substract = (a, b) => {
-    return a - b;
-  };
-  const multiply = (a, b) => {
-    return a * b;
-  };
+  const add = (a, b) => (a + b);
+  const substract = (a, b) => (a - b);
+  const multiply = (a, b) => (a * b);
   // calc logic
   const functions = [multiply, add, substract];
   const signs = ["*", "+", "-"];
