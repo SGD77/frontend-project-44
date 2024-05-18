@@ -1,6 +1,7 @@
+#!/usr/bin/env node
 import playEven from "../src/games/playEven.js";
 import play from "../src/play.js";
-import askName from "../src/askName.js";
+import greeting from "./brain-games.js";
 
-const name = askName();
+const name = greeting();
 play(playEven, name, 3);

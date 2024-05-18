@@ -1,6 +1,6 @@
 import playCalc from "../src/games/playCalc.js";
 import play from "../src/play.js";
-import askName from "../src/askName.js";
+import greeting from "./brain-games.js";
 
-const name = askName();
+const name = greeting();
 play(playCalc, name, 3);

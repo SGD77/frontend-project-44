@@ -1,6 +1,6 @@
 import playProgress from "../src/games/playProgress.js";
 import play from "../src/play.js";
-import askName from "../src/askName.js";
+import greeting from "./brain-games.js";
 
-const name = askName();
+const name = greeting();
 play(playProgress, name, 3);
