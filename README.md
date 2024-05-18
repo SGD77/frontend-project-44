@@ -5,16 +5,16 @@
 [![Actions Status](https://github.com/SGD77/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SGD77/frontend-project-44/actions)
 
 Step 5 (even) asci
-https://asciinema.org/a/s9pN7LViEAJ14VEJO7JfdNTjr
+https://asciinema.org/a/DoOjyCPbyNyFv5RaFJ0j0ucZN
 
 Step 6 (calc) asci
-https://asciinema.org/a/acrmCwTgvhCd7JRvaGTwsPkJV
+https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq
 
 Step 7 (gcd) asci
-https://asciinema.org/a/BS9FVFlY15ZDAPYqhEzhQoC7l
+ https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7
 
 Step 8 (progression) asci
-https://asciinema.org/a/LGpwnLb4KJhHNoqRnNVKqsxSH
+https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL
 
 Step 9 (prime) asci
-https://asciinema.org/a/efHYwIp2VhIqNd1S6fHiDbRNE
+https://asciinema.org/a/BQucUn74gMfnelS3Smw220XVi
