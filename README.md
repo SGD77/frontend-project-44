@@ -11,7 +11,7 @@ Step 6 (calc) asci
 https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq
 
 Step 7 (gcd) asci
- https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7
+https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7
 
 Step 8 (progression) asci
 https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL
