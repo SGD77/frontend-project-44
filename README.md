@@ -20,17 +20,10 @@
 - brain-progression
 - brain-prime
 
-Step 5 (even) asci
-[![asciicast](https://asciinema.org/a/DoOjyCPbyNyFv5RaFJ0j0ucZN.svg)](https://asciinema.org/a/DoOjyCPbyNyFv5RaFJ0j0ucZN)
+### Asciinemas
 
-Step 6 (calc) asci
-[![asciicast](https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq.svg)](https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq)
-
-Step 7 (gcd) asci
-[![asciicast](https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7.svg)](https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7)
-
-Step 8 (progression) asci
-[![asciicast](https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL.svg)](https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL)
-
-Step 9 (prime) asci
-[![asciicast](https://asciinema.org/a/BQucUn74gMfnelS3Smw220XVi.svg)](https://asciinema.org/a/BQucUn74gMfnelS3Smw220XVi)
+- [Step 5 (even) asci](https://asciinema.org/a/DoOjyCPbyNyFv5RaFJ0j0ucZN)
+- [Step 6 (calc) asci](https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq)
+- [Step 7 (gcd) asci](https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7)
+- [Step 8 (progression) asci](https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL)
+- [Step 9 (prime) asci](https://asciinema.org/a/BQucUn74gMfnelS3Smw220XVi)
