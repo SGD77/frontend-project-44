@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import playCalc from '../src/games/playCalc.js';
-import play from '../src/play.js';
-import greeting from '../src/cli.js';
 
-const name = greeting();
-play(playCalc, name, 3);
+import calc from '../src/games/calc.js';
+
+calc();

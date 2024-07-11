@@ -8,10 +8,10 @@ const playCalc = () => {
   const multiply = (a, b) => a * b;
   // calc logic
   const functions = [multiply, add, substract];
-  const signs = ['*', '+', '-'];
-  const functionIndex = random(0, 2);
+  const operators = ['*', '+', '-'];
+  const functionIndex = random(0, functions.length);
   const useFunction = functions[functionIndex];
-  const sign = signs[functionIndex];
+  const operator = operators[functionIndex];
   let num1 = random(1, 9);
   let num2 = random(1, 9);
   if (num2 > num1) {
@@ -20,7 +20,7 @@ const playCalc = () => {
     num2 = temp;
   }
   console.log('What is the result of the expression?');
-  console.log(`Question: ${num1} ${sign} ${num2}`);
+  console.log(`Question: ${num1} ${operator} ${num2}`);
   const userAnswer = Number(readlineSync.question('Your answer: '));
   const correctAnswer = useFunction(num1, num2);
   return [userAnswer, correctAnswer];

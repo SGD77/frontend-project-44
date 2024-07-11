@@ -36,12 +36,6 @@ export default [
   ...compat.extends('airbnb-base'),
   {
     rules: {
-      'no-underscore-dangle': [
-        'error',
-        {
-          allow: ['__filename', '__dirname'],
-        },
-      ],
       'import/extensions': [
         'error',
         {
@@ -52,6 +46,7 @@ export default [
       'import/no-named-as-default-member': 'off',
       'no-console': 'off',
       'import/no-extraneous-dependencies': 'off',
+      'linebreak-style': 0,
     },
   },
 ];
