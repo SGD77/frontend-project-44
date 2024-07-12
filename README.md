@@ -7,25 +7,30 @@
 ### Описание
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
 ### Игры:
+- **Определение четного числа**
 - **Калькулятор**\
 _Арифметические выражения, которые необходимо вычислить_
-- **Прогрессия**
-- **Поиск пропущенных чисел в последовательности чисел**
-- **Определение четного числа**
-- **Определение простого числа**
+- **Прогрессия**\
+_Поиск пропущенных чисел в последовательности чисел_
 - **Определение наибольшего общего делителя**
+- **Определение простого числа**
 
-### Launch commands
+### Команды для запуска
 - brain-even
 - brain-calc
 - brain-gcd
 - brain-progression
 - brain-prime
 
-### Asciinemas
+### Пример игр:
 
-- [Step 5 (even) asci](https://asciinema.org/a/DoOjyCPbyNyFv5RaFJ0j0ucZN)
-- [Step 6 (calc) asci](https://asciinema.org/a/yXTKjU6JnV2QhPrzrMgqQjcXq)
-- [Step 7 (gcd) asci](https://asciinema.org/a/w8NnS8KkQEf6SXgpEGVIxckP7)
-- [Step 8 (progression) asci](https://asciinema.org/a/t7G158RC5QA7tT2FbRq3rAtlL)
-- [Step 9 (prime) asci](https://asciinema.org/a/BQucUn74gMfnelS3Smw220XVi)
+1. Четность числа
+[![asciicast](https://asciinema.org/a/eACBbnahkoTjukNJyFXrjFPmT.svg)](https://asciinema.org/a/eACBbnahkoTjukNJyFXrjFPmT)
+2. Калькулятор
+[![asciicast](https://asciinema.org/a/H9X7aAcMy02NPMNRRP6H6vxZL.svg)](https://asciinema.org/a/H9X7aAcMy02NPMNRRP6H6vxZL)
+3. Наименьший делитель
+[![asciicast](https://asciinema.org/a/qvSBBhkesWPNDAYD2cmO1f6W6.svg)](https://asciinema.org/a/qvSBBhkesWPNDAYD2cmO1f6W6)
+4. Прогрессия
+[![asciicast](https://asciinema.org/a/a2qIOaXFMfGFppLJ6zImC1Q28.svg)](https://asciinema.org/a/a2qIOaXFMfGFppLJ6zImC1Q28)
+5. Простое число
+[![asciicast](https://asciinema.org/a/j3acI7yLrx7OLt7xVkHhzl0Rm.svg)](https://asciinema.org/a/j3acI7yLrx7OLt7xVkHhzl0Rm)
