@@ -15,11 +15,11 @@ const game = (condition, getQuestionAndAnswer) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer == correctAnswer) {
+    if (userAnswer === correctAnswer || userAnswer === correctAnswer.toString()) {
       console.log('Correct!');
     } else {
       console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
       );
       console.log(`Let's try again, ${name}!`);
       return;

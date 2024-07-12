@@ -47,6 +47,7 @@ export default [
       'no-console': 'off',
       'import/no-extraneous-dependencies': 'off',
       'linebreak-style': 0,
+      'no-underscore-dangle': 'off',
     },
   },
 ];
