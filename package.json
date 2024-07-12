@@ -27,5 +27,8 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "globals": "^15.2.0"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
