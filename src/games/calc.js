@@ -27,7 +27,7 @@ const getCalcExpression = () => {
       break;
   }
   const question = `${num1} ${operator} ${num2}`;
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const condition = 'What is the result of the expression?';

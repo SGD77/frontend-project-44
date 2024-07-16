@@ -12,7 +12,7 @@ const getRow = () => {
   }
   const correctAnswer = row[indexToGuess];
   row[indexToGuess] = '..';
-  return [row.join(' '), correctAnswer];
+  return [row.join(' '), correctAnswer.toString()];
 };
 
 const condition = 'What number is missing in the progression?';

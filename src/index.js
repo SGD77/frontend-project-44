@@ -15,9 +15,7 @@ const game = (condition, generateRound) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (
-      userAnswer !== correctAnswer && userAnswer !== correctAnswer.toString()
-    ) {
+    if (userAnswer !== correctAnswer) {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
       );
