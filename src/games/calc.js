@@ -3,8 +3,8 @@ import getCalcExpression from '../getCalcExpression.js';
 
 const condition = 'What is the result of the expression?';
 
-const getQuestionAndAnswer = () => getCalcExpression();
+const generateRound = () => getCalcExpression();
 
 export default () => {
-  game(condition, getQuestionAndAnswer);
+  game(condition, generateRound);
 };

@@ -3,8 +3,8 @@ import getRow from '../getRow.js';
 
 const condition = 'What number is missing in the progression?';
 
-const getQuestionAndAnswer = () => getRow();
+const generateRound = () => getRow();
 
 export default () => {
-  game(condition, getQuestionAndAnswer);
+  game(condition, generateRound);
 };
