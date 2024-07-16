@@ -16,16 +16,15 @@ const game = (condition, generateRound) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (
-      userAnswer === correctAnswer || userAnswer === correctAnswer.toString()
+      userAnswer !== correctAnswer && userAnswer !== correctAnswer.toString()
     ) {
-      console.log('Correct!');
-    } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
       );
       console.log(`Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
