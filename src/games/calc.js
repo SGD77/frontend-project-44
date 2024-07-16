@@ -7,25 +7,30 @@ const getCalcExpression = () => {
   if (num1 < num2) {
     [num1, num2] = [num2, num1];
   }
-  let operator = '';
-  let correctAnswer;
   const operatorIndex = getRandomNumber(0, 2);
-  switch (operatorIndex) {
-    case 0:
-      operator = '*';
-      correctAnswer = num1 * num2;
-      break;
-    case 1:
-      operator = '+';
-      correctAnswer = num1 + num2;
-      break;
-    case 2:
-      operator = '-';
-      correctAnswer = num1 - num2;
-      break;
-    default:
-      break;
-  }
+
+  const getOperator = (index) => {
+    let operator = '';
+    let correctAnswer;
+    switch (index) {
+      case 0:
+        operator = '*';
+        correctAnswer = num1 * num2;
+        break;
+      case 1:
+        operator = '+';
+        correctAnswer = num1 + num2;
+        break;
+      case 2:
+        operator = '-';
+        correctAnswer = num1 - num2;
+        break;
+      default:
+        throw new Error(`Unknown operator index: '${index}'!`);
+    }
+    return [operator, correctAnswer];
+  };
+  const [operator, correctAnswer] = getOperator(operatorIndex);
   const question = `${num1} ${operator} ${num2}`;
   return [question, correctAnswer.toString()];
 };
