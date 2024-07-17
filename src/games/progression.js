@@ -11,18 +11,21 @@ const getRow = (startNum, step) => {
   return row.join(' ');
 };
 
-const step = getRandomNumber(1, 10);
-const startNum = getRandomNumber(0, 9);
-const indexToGuess = getRandomNumber(0, 9);
-const row = getRow(startNum, step);
-row[indexToGuess] = '..';
+const hideAnswer = (row, index) => {
+  const arr = row.split(' ');
+  const correctAnswer = arr[index];
+  arr[index] = '..';
+  const newRow = arr.join(' ');
+  return [newRow, correctAnswer];
+};
 
 const condition = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const question = row;
-  const correctAnswer = row[indexToGuess];
-  return [question, correctAnswer];
+  const startNum = getRandomNumber(0, 9);
+  const step = getRandomNumber(1, 10);
+  const indexToGuess = getRandomNumber(0, 9);
+  return hideAnswer(getRow(startNum, step), indexToGuess);
 };
 
 export default () => {
