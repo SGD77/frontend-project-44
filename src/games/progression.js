@@ -1,33 +1,34 @@
-import game from '../index.js';
+import start from '../index.js';
 import getRandomNumber from '../getRandom.js';
 
-const getRow = (startNum, step) => {
+const generateProgression = (startNum, step, length = 10) => {
   const row = [];
-  let rowNumber = startNum;
-  for (let i = 0; i < 10; i += 1) {
-    rowNumber += step;
-    row.push(rowNumber);
+  for (let i = 0; i < length; i += 1) {
+    row.push(startNum + step * i);
   }
-  return row.join(' ');
+  return row;
 };
 
-const hideAnswer = (row, index) => {
-  const arr = row.split(' ');
-  const correctAnswer = arr[index];
+const generateConditionRow = (row, index) => {
+  const arr = [...row];
   arr[index] = '..';
-  const newRow = arr.join(' ');
-  return [newRow, correctAnswer];
+  return arr.join(' ');
 };
+
+const getCorrectAnswer = (row, index) => String(row[index]);
 
 const condition = 'What number is missing in the progression?';
 
 const generateRound = () => {
   const startNum = getRandomNumber(0, 9);
   const step = getRandomNumber(1, 10);
-  const indexToGuess = getRandomNumber(0, 9);
-  return hideAnswer(getRow(startNum, step), indexToGuess);
+  const progression = generateProgression(startNum, step);
+  const indexToGuess = getRandomNumber(0, progression.length - 1);
+  const conditionRow = generateConditionRow(progression, indexToGuess);
+  const correctAnswer = getCorrectAnswer(progression, indexToGuess);
+  return [conditionRow, correctAnswer];
 };
 
 export default () => {
-  game(condition, generateRound);
+  start(condition, generateRound);
 };

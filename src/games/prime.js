@@ -1,4 +1,4 @@
-import game from '../index.js';
+import start from '../index.js';
 import getRandomNumber from '../getRandom.js';
 
 const isPrime = (num) => {
@@ -20,5 +20,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  game(condition, generateRound);
+  start(condition, generateRound);
 };
