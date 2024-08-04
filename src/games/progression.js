@@ -1,10 +1,10 @@
 import start from '../index.js';
 import getRandomNumber from '../getRandom.js';
 
-const getRow = (startNum, step) => {
+const getRow = (startNum, step, length = 10) => {
   const row = [];
   let rowNumber = startNum;
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     rowNumber += step;
     row.push(rowNumber);
   }
