@@ -1,4 +1,4 @@
-import game from '../index.js';
+import start from '../index.js';
 import getRandomNumber from '../getRandom.js';
 
 const getCalcExpression = () => {
@@ -40,5 +40,5 @@ const condition = 'What is the result of the expression?';
 const generateRound = () => getCalcExpression();
 
 export default () => {
-  game(condition, generateRound);
+  start(condition, generateRound);
 };
