@@ -24,7 +24,7 @@ const condition = 'What number is missing in the progression?';
 const generateRound = () => {
   const startNum = getRandomNumber(0, 9);
   const step = getRandomNumber(1, 10);
-  const indexToGuess = getRandomNumber(0, 9);
+  const indexToGuess = getRandomNumber(0, getRow(startNum, step).split(' ').length);
   return hideAnswer(getRow(startNum, step), indexToGuess);
 };
 
