@@ -1,50 +1,31 @@
 import start from '../index.js';
 import getRandomNumber from '../getRandom.js';
 
-const getCalcExpression = () => {
+const generateCalcExpression = () => {
   let num1 = getRandomNumber(1, 10);
   let num2 = getRandomNumber(1, 10);
   if (num1 < num2) {
     [num1, num2] = [num2, num1];
   }
 
-  const operators = {
-    multiply: '*',
-    add: '+',
-    substract: '-',
-  };
+  const operators = [
+    { symbol: '*', operation: (a, b) => a * b },
+    { symbol: '+', operation: (a, b) => a + b },
+    { symbol: '-', operation: (a, b) => a - b },
+  ];
 
-  const operatorIndex = getRandomNumber(1, Object.keys(operators).length);
+  const operatorIndex = getRandomNumber(0, operators.length - 1);
+  const operator = operators[operatorIndex];
 
-  const getOperator = (index) => {
-    let operator = '';
-    let correctAnswer;
-    switch (index) {
-      case 1:
-        operator = '*';
-        correctAnswer = num1 * num2;
-        break;
-      case 2:
-        operator = '+';
-        correctAnswer = num1 + num2;
-        break;
-      case 3:
-        operator = '-';
-        correctAnswer = num1 - num2;
-        break;
-      default:
-        throw new Error(`Unknown operator index: '${index}'!`);
-    }
-    return [operator, correctAnswer];
-  };
-  const [operator, correctAnswer] = getOperator(operatorIndex);
-  const question = `${num1} ${operator} ${num2}`;
-  return [question, correctAnswer.toString()];
+  const question = `${num1} ${operator.symbol} ${num2}`;
+  const correctAnswer = operator.operation(num1, num2).toString();
+
+  return [question, correctAnswer];
 };
 
 const condition = 'What is the result of the expression?';
 
-const generateRound = () => getCalcExpression();
+const generateRound = () => generateCalcExpression();
 
 export default () => {
   start(condition, generateRound);
