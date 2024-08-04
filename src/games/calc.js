@@ -7,21 +7,28 @@ const getCalcExpression = () => {
   if (num1 < num2) {
     [num1, num2] = [num2, num1];
   }
-  const operatorIndex = getRandomNumber(0, 2);
+
+  const operators = {
+    multiply: '*',
+    add: '+',
+    substract: '-',
+  };
+
+  const operatorIndex = getRandomNumber(1, Object.keys(operators).length);
 
   const getOperator = (index) => {
     let operator = '';
     let correctAnswer;
     switch (index) {
-      case 0:
+      case 1:
         operator = '*';
         correctAnswer = num1 * num2;
         break;
-      case 1:
+      case 2:
         operator = '+';
         correctAnswer = num1 + num2;
         break;
-      case 2:
+      case 3:
         operator = '-';
         correctAnswer = num1 - num2;
         break;
